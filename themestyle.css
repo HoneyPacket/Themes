@@ -1,0 +1,277 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  font-weight: 700;
+  background-color: rgb(255, 233, 206);
+  color: rgb(29, 29, 29);
+}
+
+#headDiv{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70rem;
+  border-bottom: solid;
+  padding-bottom: 1rem;
+}
+
+#paddingDiv{
+  padding-top: 3rem;
+  max-width: 63rem;
+}
+
+
+
+
+.lightMode{
+  background-color: rgb(255, 233, 206);
+  color: rgb(29, 29, 29);
+  transition: 0.3s;
+}
+
+.darkMode{
+  background-color: #0c1218;
+  color: antiquewhite;
+  transition: 0.3s;
+}
+
+.purpleMode{
+  background-color: rgb(14, 3, 22);
+  color: rgb(255, 201, 136);
+  transition: 0.3s;
+}
+
+.redMode{
+  background-color: rgb(41, 4, 4);
+  color: antiquewhite;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/*modal project*/
+#openModalBtn{
+  padding: 1rem 2rem;
+  background-color: rgb(0, 135, 197);
+  font-weight: 700;
+  border: none;
+}
+
+#openModalBtn:hover{
+  background-color: rgb(0, 106, 155);
+  cursor: pointer;
+}
+
+
+#modal {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    padding: 1rem;
+    border-radius: .25rem;
+    background-color: #0c2338;
+    color: antiquewhite;
+  }
+  
+  #overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .75);
+  }
+
+  #modal.open {
+    display: block;
+  }
+
+  #overlay.open {
+    display: block;
+  }
+  /*modal project end*/
+
+/* modal theme grid */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0.5rem;
+}
+.gridItem {
+  /* border: 0.2rem solid black; */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  max-width: 15rem;
+}
+
+.gridPics{
+  width: 6em;
+  height: 5em;
+}
+
+/* light button */
+#lightTheme{
+  background-color: rgb(255, 233, 206);
+  border: solid black;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+#lightTheme:hover{
+  background-color: rgb(216, 198, 176);
+  cursor: pointer;
+}
+
+/* dark button */
+#darkTheme{
+  background-color: #0c1218;
+  color: antiquewhite;
+  border: solid antiquewhite;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+#darkTheme:hover{
+  background-color: #040608;
+  cursor: pointer;
+}
+
+/* purple button */
+#purpleTheme{
+  background-color: rgb(14, 3, 22);
+  color: rgb(255, 201, 136);
+  border: solid rgb(61, 0, 56);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+#purpleTheme:hover{
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+/* red button */
+#redTheme{
+  background-color: rgb(41, 4, 4);
+  color: antiquewhite;
+  border: solid rgb(134, 122, 106);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+#redTheme:hover{
+  background-color: rgb(29, 3, 3);
+  cursor: pointer;
+}
+
+
+#closeModalBtn{
+  padding: 0.3rem 0.8rem;
+  background-color: rgb(0, 154, 192);
+  font-size: 1rem;
+  font-weight: 600;
+  border: solid 0.3rem black;
+}
+
+#closeModalBtn:hover{
+  background-color: rgb(0, 125, 156);
+}
+
+
+/* /////////////// */
+/* /////////////// */
+/* dropdown themes */
+.dropbtn {
+  background-color:rgb(219, 64, 72);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(155, 24, 31);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/* //////////// */
+/* option style */
+
+/* light mode */
+#linkOne{
+  background-color: rgb(255, 246, 234);
+  color: rgb(29, 29, 29);
+  border: solid;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#linkOne:hover{
+  background-color: rgb(223, 215, 204);
+  cursor: pointer;
+}
+
+/* dark mode */
+#linkTwo{
+  background-color: rgb(24, 24, 24);
+  color: antiquewhite;
+  border: solid;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#linkTwo:hover{
+  background-color: rgb(15, 15, 15);
+  cursor: pointer;
+}
+
+/* purple mode */
+#linkThree{
+  background-color: rgb(14, 3, 22);
+  color: rgb(255, 201, 136);
+  border: solid rgb(54, 0, 25);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#linkThree:hover{
+  background-color: rgb(5, 1, 7);
+  cursor: pointer;
+}
+
+/* red mode */
+#linkFour{
+  background-color: rgb(41, 4, 4);
+  color: antiquewhite;
+  border: solid rgb(134, 122, 106);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#linkFour:hover{
+  background-color: rgb(29, 3, 3);
+  cursor: pointer;
+}
