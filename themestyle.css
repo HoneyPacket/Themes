@@ -1,5 +1,5 @@
 body{
-
+  font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   font-weight: 700;
   background-color: rgb(255, 233, 206);
@@ -10,22 +10,18 @@ body{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   max-width: 60rem;
-  margin-top: 4em;
+  margin-top: 2em;
   padding: 3em;
-  background-color: #0000007a;
-  border-radius: 0.6rem;
-  border: black 2px solid;
+  padding-top: 1em;
+  background-color: #00000057;
+  border-radius: 0.3rem;
+  border: 5px solid;
 }
 
 #headDivTitle{
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 900;
 }
-
-/* #paddingDiv{
-  padding-top: 3rem;
-  max-width: 63rem;
-} */
 
 
 
@@ -40,6 +36,7 @@ body{
   background-color: #0c1218;
   color: antiquewhite;
   transition: 0.3s;
+  border-color: antiquewhite;
 }
 
 .purpleMode{
@@ -81,7 +78,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid black;
+    border: 5px solid black;
     padding: 1rem;
     border-radius: .25rem;
     background-color: #000000a4;
@@ -184,7 +181,7 @@ body{
   background-color: rgb(219, 64, 72);
   font-size: 1rem;
   font-weight: 600;
-  border: solid 0.3rem black;
+  border: solid 0.2rem black;
 }
 
 #closeModalBtn:hover{
@@ -282,4 +279,24 @@ body{
 #linkFour:hover{
   background-color: rgb(29, 3, 3);
   cursor: pointer;
+}
+
+
+
+/* flexbox */
+.fluff {
+  display: flexbox;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 60rem;
+}
+
+.fluff > div {
+  margin: 10px;
+  padding: 30px;
+  padding-top: 10px;
+  /* border: 0.1rem;
+  border-style:dotted;*/
+  border-radius: 4px;
+  background-color: #0000001e;
 }

@@ -75,6 +75,7 @@ const darkDrop = document.getElementById('linkTwo')
 const purpleDrop = document.getElementById('linkThree')
 const redDrop = document.getElementById('linkFour')
 
+
 lightDrop.addEventListener('click', ()=>{
    themeTag.add('lightMode')
    themeTag.remove('darkMode')
