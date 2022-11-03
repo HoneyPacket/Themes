@@ -7,15 +7,17 @@ body{
 }
 
 #headDiv{
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  max-width: 60rem;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
+  margin: auto;
+  max-width: 50rem;
   margin-top: 2em;
   padding: 3em;
   padding-top: 1em;
   background-color: #00000057;
   border-radius: 0.3rem;
   border: 5px solid;
+  left: 50%;
 }
 
 #headDivTitle{
@@ -283,21 +285,38 @@ body{
 }
 
 
+.headFluff{
+  font-family: 'Lobster', cursive;
+  margin: 0%;
+  margin-top: 1rem;
+}
 
 /* flexbox */
 .fluff {
-  display: flexbox;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  left: 50%;
+  /* margin-left: 1rem;
+  margin-right: 1rem; */
+  /* margin: auto; */
   max-width: 60rem;
+  padding: 0%;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+.fluffStuff > h2{
+  margin-top: 0;
 }
 
 .fluff > div {
-  margin: 10px;
-  padding: 30px;
+  margin-top: 0.5rem;
+  padding: 20px;
   padding-top: 10px;
-  /* border: 0.1rem;
-  border-style:dotted;*/
   border-radius: 4px;
   background-color: #0000001e;
+  max-width: 12rem;
+  min-width: 8rem;
+  display: inline-flex;
+  border: solid 3px;
 }
+
