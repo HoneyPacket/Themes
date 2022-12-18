@@ -37,6 +37,9 @@ let themeTag = document.body.classList
 
 lightTheme.addEventListener('click', ()=>{
     themeTag.add('lightMode')
+    document.getElementById("headDivTitle").style.color = '#0d9299';
+    document.getElementById("headFluff").style.color = "#1d9bf0";
+
     themeTag.remove('darkMode')
     themeTag.remove('purpleMode')
     themeTag.remove('redMode')
@@ -44,6 +47,9 @@ lightTheme.addEventListener('click', ()=>{
 
 darkTheme.addEventListener('click', ()=>{
     themeTag.add('darkMode')
+    document.getElementById("headDivTitle").style.color = "#1d9bf0";
+    document.getElementById("headFluff").style.color = '#468487';
+
     themeTag.remove('lightMode')
     themeTag.remove('purpleMode')
     themeTag.remove('redMode')
@@ -51,6 +57,9 @@ darkTheme.addEventListener('click', ()=>{
 
 purpleTheme.addEventListener('click', ()=>{
    themeTag.add('purpleMode')
+   document.getElementById("headDivTitle").style.color = "#d8792b";
+   document.getElementById("headFluff").style.color = '#cc2c24';
+
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('redMode')
@@ -58,6 +67,9 @@ purpleTheme.addEventListener('click', ()=>{
 
 redTheme.addEventListener('click', ()=>{
    themeTag.add('redMode')
+   document.getElementById("headDivTitle").style.color = "#74c6eb";
+   document.getElementById("headFluff").style.color = '#08acfd';
+
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('purpleMode')
@@ -78,6 +90,9 @@ const redDrop = document.getElementById('linkFour')
 
 lightDrop.addEventListener('click', ()=>{
    themeTag.add('lightMode')
+   document.getElementById("headDivTitle").style.color = '#0d9299';
+   document.getElementById("headFluff").style.color = "#1d9bf0";
+
    themeTag.remove('darkMode')
    themeTag.remove('purpleMode')
    themeTag.remove('redMode')
@@ -86,6 +101,9 @@ lightDrop.addEventListener('click', ()=>{
 
 darkDrop.addEventListener('click', ()=>{
    themeTag.add('darkMode')
+   document.getElementById("headDivTitle").style.color = "#1d9bf0";
+   document.getElementById("headFluff").style.color = '#468487';
+
    themeTag.remove('lightMode')
    themeTag.remove('purpleMode')
    themeTag.remove('redMode')
@@ -93,6 +111,9 @@ darkDrop.addEventListener('click', ()=>{
 
 purpleDrop.addEventListener('click', ()=>{
    themeTag.add('purpleMode')
+   document.getElementById("headDivTitle").style.color = "#d8792b";
+   document.getElementById("headFluff").style.color = '#cc2c24';
+
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('redMode')
@@ -100,6 +121,9 @@ purpleDrop.addEventListener('click', ()=>{
 
 redDrop.addEventListener('click', ()=>{
    themeTag.add('redMode')
+   document.getElementById("headDivTitle").style.color = "#74c6eb";
+   document.getElementById("headFluff").style.color = '#08acfd';
+
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('purpleMode')

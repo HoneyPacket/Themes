@@ -1,8 +1,8 @@
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: larger;
   font-weight: 700;
-  background-color: rgb(255, 233, 206);
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
 
@@ -15,8 +15,7 @@ body{
   padding: 3em;
   padding-top: 1em;
   background-color: #00000057;
-  border-radius: 0.3rem;
-  border: 5px solid;
+  border: 4px solid;
   left: 50%;
 }
 
@@ -24,13 +23,16 @@ body{
   font-size: 3.5rem;
   font-weight: 900;
   font-family: 'Lobster', cursive;
+  color: #0d9299;
+}
+
+#headFluff{
+  color: #1d9bf0;
 }
 
 
-
-
 .lightMode{
-  background-color: rgb(255, 233, 206);
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   transition: 0.3s;
 }
@@ -43,14 +45,15 @@ body{
 }
 
 .purpleMode{
-  background-color: rgb(14, 3, 22);
-  color: rgb(255, 201, 136);
+  background-color: #232526;
+  border-color: #cb373b;
+  color: #e6d2b5;
   transition: 0.3s;
 }
 
 .redMode{
-  background-color: rgb(41, 4, 4);
-  color: antiquewhite;
+  background-color: #ffd7ef;
+  color: #111111;
   transition: 0.3s;
 }
 
@@ -81,9 +84,9 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid black;
+    border: 3px solid rgb(216, 181, 135);
     padding: 1rem;
-    border-radius: .25rem;
+    border-radius: 2px;
     background-color: #000000a4;
     color: antiquewhite;
   }
@@ -143,7 +146,7 @@ body{
 #darkTheme{
   background-color: #0c1218;
   color: antiquewhite;
-  border: solid antiquewhite;
+  border: solid #468487;
   padding: 0.5rem 1rem;
   font-weight: 600;
 }
@@ -154,9 +157,9 @@ body{
 
 /* purple button */
 #purpleTheme{
-  background-color: rgb(14, 3, 22);
-  color: rgb(255, 201, 136);
-  border: solid rgb(61, 0, 56);
+  background-color: #232526;
+  color: #e4d1b4;
+  border: solid #cc2c24;
   padding: 0.5rem 1rem;
   font-weight: 600;
 }
@@ -167,14 +170,14 @@ body{
 
 /* red button */
 #redTheme{
-  background-color: rgb(41, 4, 4);
-  color: antiquewhite;
-  border: solid rgb(134, 122, 106);
+  background-color: #ffd5ee;
+  color: black;
+  border: solid #15a7fa;
   padding: 0.5rem 1rem;
   font-weight: 600;
 }
 #redTheme:hover{
-  background-color: rgb(29, 3, 3);
+  background-color: #cca0ba;
   cursor: pointer;
 }
 
@@ -246,7 +249,7 @@ body{
 #linkTwo{
   background-color: rgb(24, 24, 24);
   color: antiquewhite;
-  border: solid;
+  border: solid #468487;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -258,9 +261,9 @@ body{
 
 /* purple mode */
 #linkThree{
-  background-color: rgb(14, 3, 22);
+  background-color: #28292a;
   color: rgb(255, 201, 136);
-  border: solid rgb(54, 0, 25);
+  border: solid #cc332a;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -272,20 +275,20 @@ body{
 
 /* red mode */
 #linkFour{
-  background-color: rgb(41, 4, 4);
-  color: antiquewhite;
-  border: solid rgb(134, 122, 106);
+  background-color: #ffd5ee;
+  color: black;
+  border: solid #15a7fa;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 #linkFour:hover{
-  background-color: rgb(29, 3, 3);
+  background-color: #cf99ba;
   cursor: pointer;
 }
 
 
-.headFluff{
+#headFluff{
   font-family: 'Lobster', cursive;
   margin: 0%;
   margin-top: 1rem;
