@@ -37,7 +37,7 @@ let themeTag = document.body.classList
 
 lightTheme.addEventListener('click', ()=>{
     themeTag.add('lightMode')
-    document.getElementById("headDivTitle").style.color = '#0d9299';
+    document.getElementById("headDivTitle").style.color = '#275086';
     document.getElementById("headFluff").style.color = "#1d9bf0";
 
     themeTag.remove('darkMode')
@@ -90,7 +90,7 @@ const redDrop = document.getElementById('linkFour')
 
 lightDrop.addEventListener('click', ()=>{
    themeTag.add('lightMode')
-   document.getElementById("headDivTitle").style.color = '#0d9299';
+   document.getElementById("headDivTitle").style.color = '#275086';
    document.getElementById("headFluff").style.color = "#1d9bf0";
 
    themeTag.remove('darkMode')
