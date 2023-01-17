@@ -37,8 +37,8 @@ let themeTag = document.body.classList
 
 lightTheme.addEventListener('click', ()=>{
     themeTag.add('lightMode')
-    document.getElementById("headDivTitle").style.color = '#275086';
-    document.getElementById("headFluff").style.color = "#1d9bf0";
+    document.getElementById("headDivTitle").style.color = '#d65d0e';
+    document.getElementById("headFluff").style.color = "#cc241d";
 
     themeTag.remove('darkMode')
     themeTag.remove('purpleMode')
@@ -67,8 +67,8 @@ purpleTheme.addEventListener('click', ()=>{
 
 redTheme.addEventListener('click', ()=>{
    themeTag.add('redMode')
-   document.getElementById("headDivTitle").style.color = "#74c6eb";
-   document.getElementById("headFluff").style.color = '#08acfd';
+   document.getElementById("headDivTitle").style.color = "#cba6f7";
+   document.getElementById("headFluff").style.color = '#89dceb';
 
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
@@ -90,8 +90,8 @@ const redDrop = document.getElementById('linkFour')
 
 lightDrop.addEventListener('click', ()=>{
    themeTag.add('lightMode')
-   document.getElementById("headDivTitle").style.color = '#275086';
-   document.getElementById("headFluff").style.color = "#1d9bf0";
+   document.getElementById("headDivTitle").style.color = '#d65d0e';
+   document.getElementById("headFluff").style.color = "#cc241d";
 
    themeTag.remove('darkMode')
    themeTag.remove('purpleMode')
@@ -121,8 +121,8 @@ purpleDrop.addEventListener('click', ()=>{
 
 redDrop.addEventListener('click', ()=>{
    themeTag.add('redMode')
-   document.getElementById("headDivTitle").style.color = "#74c6eb";
-   document.getElementById("headFluff").style.color = '#08acfd';
+   document.getElementById("headDivTitle").style.color = "#cba6f7";
+   document.getElementById("headFluff").style.color = '#89dceb';
 
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
