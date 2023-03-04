@@ -43,6 +43,8 @@ lightTheme.addEventListener('click', ()=>{
     themeTag.remove('darkMode')
     themeTag.remove('purpleMode')
     themeTag.remove('redMode')
+
+    localStorage.setItem('selectedTheme', 1);
 })
 
 darkTheme.addEventListener('click', ()=>{
@@ -53,6 +55,8 @@ darkTheme.addEventListener('click', ()=>{
     themeTag.remove('lightMode')
     themeTag.remove('purpleMode')
     themeTag.remove('redMode')
+
+    localStorage.setItem('selectedTheme', 2);
 })
 
 purpleTheme.addEventListener('click', ()=>{
@@ -63,6 +67,8 @@ purpleTheme.addEventListener('click', ()=>{
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('redMode')
+
+   localStorage.setItem('selectedTheme', 3);
 })
 
 redTheme.addEventListener('click', ()=>{
@@ -73,6 +79,8 @@ redTheme.addEventListener('click', ()=>{
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('purpleMode')
+
+   localStorage.setItem('selectedTheme', 4);
 })
 
 
@@ -97,6 +105,8 @@ lightDrop.addEventListener('click', ()=>{
    themeTag.remove('purpleMode')
    themeTag.remove('redMode')
 
+   localStorage.setItem('selectedTheme', 1);
+
 })
 
 darkDrop.addEventListener('click', ()=>{
@@ -107,6 +117,8 @@ darkDrop.addEventListener('click', ()=>{
    themeTag.remove('lightMode')
    themeTag.remove('purpleMode')
    themeTag.remove('redMode')
+
+   localStorage.setItem('selectedTheme', 2);
 })
 
 purpleDrop.addEventListener('click', ()=>{
@@ -117,6 +129,8 @@ purpleDrop.addEventListener('click', ()=>{
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('redMode')
+
+   localStorage.setItem('selectedTheme', 3);
 })
 
 redDrop.addEventListener('click', ()=>{
@@ -127,4 +141,49 @@ redDrop.addEventListener('click', ()=>{
    themeTag.remove('lightMode')
    themeTag.remove('darkMode')
    themeTag.remove('purpleMode')
+
+   localStorage.setItem('selectedTheme', 4);
 })
+
+
+///////////////
+///////////////
+//local storage
+
+let selectedTheme = localStorage.getItem('selectedTheme');
+console.log(selectedTheme);
+
+
+if (selectedTheme == 1) {
+   themeTag.add('lightMode')
+   document.getElementById("headDivTitle").style.color = '#d65d0e';
+   document.getElementById("headFluff").style.color = "#cc241d";
+
+   themeTag.remove('darkMode')
+   themeTag.remove('purpleMode')
+   themeTag.remove('redMode')
+}else if (selectedTheme == 2) {
+   themeTag.add('darkMode')
+   document.getElementById("headDivTitle").style.color = "#1d9bf0";
+   document.getElementById("headFluff").style.color = '#468487';
+
+   themeTag.remove('lightMode')
+   themeTag.remove('purpleMode')
+   themeTag.remove('redMode')
+}else if (selectedTheme == 3){
+   themeTag.add('purpleMode')
+   document.getElementById("headDivTitle").style.color = "#d8792b";
+   document.getElementById("headFluff").style.color = '#cc2c24';
+
+   themeTag.remove('lightMode')
+   themeTag.remove('darkMode')
+   themeTag.remove('redMode')
+}else if (selectedTheme == 4){
+   themeTag.add('redMode')
+   document.getElementById("headDivTitle").style.color = "#cba6f7";
+   document.getElementById("headFluff").style.color = '#89dceb';
+
+   themeTag.remove('lightMode')
+   themeTag.remove('darkMode')
+   themeTag.remove('purpleMode')
+}
